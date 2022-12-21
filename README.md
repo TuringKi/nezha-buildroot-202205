@@ -2,7 +2,7 @@
 
 ```bash
 #启动一个ubuntu 18.04 环境：
-docker run -it -v `pwd`:/work/ ubuntu:18.04
+docker run -it  ubuntu:18.04 /bin/bash
 
 apt-get install mtools dosfstools libpixman-1-dev libglib2.0-dev ninja-build
 
@@ -22,7 +22,7 @@ git clone https://github.com/TuringKi/d1-linux
 cd d1-linux
 
 #用第一趟编译好的riscv64工具链在指定的linux内核上编译出linux-header：
-PATH=/work/xuantie-gnu-toolchain/.build/install/bin/:$PATH \
+PATH=/root/xuantie-gnu-toolchain/.build/install/bin/:$PATH \
 make ARCH=riscv CROSS_COMPILE=riscv64-unknown-linux-gnu-  \
 headers_install INSTALL_HDR_PATH=`pwd`/.build/install/usr -j8
 
