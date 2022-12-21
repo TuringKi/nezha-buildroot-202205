@@ -63,4 +63,3 @@ ls output/images/sdcard.img
 
 ```
 
-注意，在gcc10.x版本下，vector扩展的march标识为：v0p7 而不是v。
