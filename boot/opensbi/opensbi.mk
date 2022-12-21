@@ -31,7 +31,7 @@ BR_NO_CHECK_HASH_FOR += $(OPENSBI_SOURCE)
 endif
 
 OPENSBI_MAKE_ENV = \
-	CROSS_COMPILE=/root/Neza-D1/buildroot-2021/output/host/bin/riscv64-unknown-linux-gnu-
+	CROSS_COMPILE=/root/nezha-buildroot-202205/output/host/bin/riscv64-unknown-linux-gnu-
 
 OPENSBI_PLAT = $(call qstrip,$(BR2_TARGET_OPENSBI_PLAT))
 ifneq ($(OPENSBI_PLAT),)

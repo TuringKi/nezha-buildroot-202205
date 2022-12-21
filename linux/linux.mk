@@ -153,7 +153,7 @@ LINUX_MAKE_FLAGS = \
 	HOSTCC="$(HOSTCC) $(HOST_CFLAGS) $(HOST_LDFLAGS)" \
 	ARCH=$(KERNEL_ARCH) \
 	INSTALL_MOD_PATH=$(TARGET_DIR) \
-	CROSS_COMPILE="/root/Neza-D1/buildroot-2021/output/host/bin/riscv64-unknown-linux-gnu-" \
+	CROSS_COMPILE="/root/xuantie-gnu-toolchain/.build/install/bin/riscv64-unknown-linux-gnu-" \
 	WERROR=0 \
 	DEPMOD=$(HOST_DIR)/sbin/depmod
 

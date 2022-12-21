@@ -152,7 +152,7 @@ UBOOT_ARCH = $(NORMALIZED_ARCH)
 endif
 
 UBOOT_MAKE_OPTS += \
-	CROSS_COMPILE="/root/Neza-D1/buildroot-2021/output/host/bin/riscv64-unknown-linux-gnu-" \
+	CROSS_COMPILE="/root/nezha-buildroot-202205/output/host/bin/riscv64-unknown-linux-gnu-" \
 	ARCH=$(UBOOT_ARCH) \
 	HOSTCC="$(HOSTCC) $(subst -I/,-isystem /,$(subst -I /,-isystem /,$(HOST_CFLAGS)))" \
 	HOSTLDFLAGS="$(HOST_LDFLAGS)" \
