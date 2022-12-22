@@ -58,6 +58,10 @@ cp d1-buildroot.config .config
 
 make -j8
 
+cp ./output/target/lib/ld-2.33.so  ./output/target/lib/ld-linux-riscv64-lp64d.so.1
+
+make -j8
+
 #如果编译成功，会有：
 ls output/images/sdcard.img
 
